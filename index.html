@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Errores Comunes Banco W</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/league.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background="#f0f0f0" data-transition="zoom">
+					<a href="https://revealjs.com">
+						<img src="./img/kata-negro.jpg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<h3>Errores Comunes Banco W</h3>
+				</section>				
+				<section data-background="#f0f0f0" data-transition="zoom">
+					<h2>Errores más Comunes de Banco W</h2>
+					<ul>
+						<li><a href="#/2">Barrio no lo atiende la Agencia</a></li>
+						<li><a href="#/3">Error al seleccionar actividad económica</a></li>						
+						<li><a href="#/4">Sin acceso a Formiik</a></li>
+					</ul>
+				</section>
+				<section data-background="#f0f0f0" data-transition="zoom">
+					<section>
+						<h1>Barrio no lo atiende la Agencia</h1>									
+					</section>
+					<section>
+						<h2>Barrio no lo atiende la Agencia</h2>
+						A pesar de que este fallo, procede escalarlo con Banco W si la configuración de nuestro lado en Mobile es la óptima, hay escenarios donde no debemos escalar, por ejemplo, cuando el analista tiene una versión diferente a la autorizada, que puede mostrar barrios con una numeración distinta.
+					</section>
+					<section>
+						<h2>Escenario 1</h2>
+						<ul>
+							<li>
+								Se puede dar el caso que el user tiene otras versiones instaladas además de la homolagada y elige la que no corresponde, si en adición le pone elegir siempre a la opción errada, ya ni aparecerá pistas de este error
+							</li>
+							<li class="fragment">
+								Lo que procede en este caso es validar desde mobicontrol las aplicaciones instaladas, desbloquear el dispositivo y desinstalar manualmente la versión diferente a la homologada. En la siguiente enlace puedes acceder a la carpeta con las aplicaciones que corresponden:
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Escenario 2</h2>
+						<ul>
+							<li>
+								Otro escenario que suele suceder es que el usuario tiene la versión actualizada, pero el user intenta en una orden que ya tiene el error y aunque pone el barrio que corresponde el código del barrio no se actualiza y el fallo persiste. En este último caso corresponde generar una nueva solicitud para que de ahí en adelante el proceso funcione.
+							</li>
+							<li class="fragment">
+								En este último caso corresponde generar una nueva solicitud para que de ahí en adelante el proceso funcione.
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section data-background="#f0f0f0" data-transition="zoom">
+					<section>
+						<h1>Actividad económica, Pantalla de Error</h1>
+					</section>										
+					<section>
+					<h2>Error Actividad Económica</h2>
+						<ul>
+							<li>
+								Cuando sale la ventana emergente de error, en los teléfonos samsung, lo que debemos hacer es desinstalar catalogs, he instalar la versión correspondiente
+							</li>
+							<li class="fragment">
+							La principal dificultad es que el teléfono enrolado no permite desinstalar catalogs, ni formiik. <b>Se debe desenrolar el dispositivo</b>
+							</li>
+						</ul>
+					</section>
+					<section>
+							<h2>Error Actividad Económica</h2>
+								<ul>
+									<li>
+										Mi recomendación es que primero se desbloquee <b>Mobicontrol</b> con la contraseña que corresponda según el <a href="https://mobiik-my.sharepoint.com/:x:/r/personal/omarpc_kata-software_com/_layouts/15/doc2.aspx?sourcedoc=%7B09E4E87C-931A-4C0D-8347-2293060C86BC%7D&file=claves%20MC%20actualizada%202018.xlsx&action=default&mobileredirect=true&cid=804055dd-321a-43a8-9d44-c40074cb64fc" target="_blank">documento de contraseñas</a>
+									</li>
+									<li class="fragment">
+										Instalarle en remoto al usuario la aplicación <a href="https://play.google.com/store/apps/details?id=com.anydesk.anydeskandroid&hl=es&gl=US" target="_blank">AnyDesk</a> 
+									</li>
+									<li class="fragment">
+										Despúes de <b>desenrolar el dispositivo</b> va a ser perfectamente posible desinstalar la versión no correspondiente de <b>Catalogs</b>
+									</li>
+								</ul>
+						</section>
+						<section>
+							<h2>Error Actividad Económica</h2>
+								<ul>
+									<li>								
+									A continuación se instala la versión que aplica de <b>Catalogs</b> que se encuentra enlazada en la diapositiva de <a href="#/3/5">Aplicaciones Banco W</a>
+									</li>
+									<li class="fragment">									
+									Se abre la aplicación de Formiik y se accede con las credenciales de tu usuario de soporte
+									</li>
+									<li class="fragment">
+									Después se crea una solicitud de tipo SOLN y en la pestaña de <b>Radicación</b>, se busca el botón de <b>Actividad Económica</b> y se pulsa en este, para llamar el catálogo
+									</li>								
+									
+								</ul>								
+								
+						</section>
+						<section>
+							<h2>Error Actividad Económica</h2>
+								<ul>
+									<li>								
+										Lo último es poner el archivo <b>ciiuBancoW.csv</b> listado en el <a href="#/4/2">repositorio relacionado de Banco W</a> en la siguiente ubicación dentro del dispositivo:
+									</li>
+									
+									<p class="fragment">									
+										<b>Android/data/com.kata.mobile.catalogs/files/Documents</b>
+									</p>
+									
+								</ul>								
+						</section>
+						<section>
+							<h2>Aplicaciones Banco W</h2>
+							<a href="https://mobiik-my.sharepoint.com/:f:/g/personal/mauriciosb_kata-software_com/EqFLbaONkExLvoKhDre6_ZEBGTxC35z3p9IctAJQvfIYEw?e=A6Yu0q" target="_blank">Repositorio Aplicaciones Banco W</a>
+							<p><a href="https://drive.google.com/drive/folders/14Jk8zsADTAeGg1YnkvLlZl1KsTyZjZmH?usp=sharing" target="_blank">Repositorio Colgado en Gmail</a></p>
+						</section>
+						<section>
+							<h2>Aplicaciones Banco W</h2>
+							<p>
+								Las aplicación que aparecen listadas fuera de carpeta son las necesarias para el aprovisionamiento del último teléfono homologado el <b>Samsung A12</b>
+							</p>
+						</section>
+						<section>
+							<h2>Aplicaciones Banco W</h2>
+							<p>
+								Después la carpeta que sigue en importancia es la <b>Y7 2019</b> que fue un teléfono anterior homologado y es el que está más distribuido, este tiene principalmente la versión de <b>catalogs apk</b> que le corresponde y la versión de <b>Agente de Mobicontrol</b> acorde
+							</p>						
+						</section>
+						</section>
+				<section data-background="#f0f0f0" data-transition="zoom">
+					<section>
+							<h1>Sin Acceso a Formiik</h1>
+					</section>
+					<section>
+							<h2>Sin acceso a Formiik</h2>
+							<ul>
+								<li>
+									En este caso es muy probable que el usuario no tenga Internet o se encuentre en una zona donde hay mucha lentitud o intermitencia
+								</li>
+								<li class="fragment">
+									También es probable que los servicios de Formiik estén caidos o la autenticación con el Banco
+								</li>
+								<li class="fragment">
+									Es cuestión de validar si el mensaje de <b>Servicio no disponible</b> aparece de inmediato, o si tarda en aparecer
+								</li>
+							</ul>
+					</section>
+					<section>
+						<h2>Sin acceso a Formiik</h2>
+						<ul>
+							<li>
+								Cuando el mensaje tarda en aparecer normalmente es por un fallo a nivel de servidor, más que a razón del servicio de Internet del usuario. Aunque si el problema es de lentitud en el acceso a Internet del usuario también podría demorarse en mostrarse el mensaje de <b>Servicio no disponible</b>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Sin acceso a Formiik</h2>
+						<ul>
+							<li>
+								Cuando el mensaje aparece enseguida es muy probable que no tenga acceso a Internet el usuario y faltaría validar si tiene datos móviles encendidos
+							</li>
+							<li class="fragment">
+								En caso de que haya lentitud a nivel de servicio el fallo es general y deberíamos validar si está en nuestros servidores o en los del banco.
+							</li>
+						</ul>
+				</section>
+				<section>
+					<h2>Sin acceso a Formiik</h2>
+					<ul>
+						<li>
+							Debemos generar el ticket relacionado y escalar con el área que corresponda, seamos nosotros mismos con Omar Prudente, o sea el banco.
+						</li>
+						<li class="fragment">
+							En adición es recomendable enviar un mensaje masivo, o pedirle a los funcionarios con esta facultad de envío que con la mayor brevedad se les avise a toda la operación, para reducir el impacto a la línea.
+						</li>						
+					</ul>
+				</section>
+				<section>
+					<h2>Sin acceso a Formiik</h2>
+					<ul>
+						<li>
+							Si vemos que a nivel de servidor todo está en orden, el banco manifiesta no tener ningún inconveniente con el servicio, esta validación con el banco la pueden hacer conmigo mismo. Es muy probable que la lentitud sea por el proveedor de Internet
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Sin acceso a Formiik</h2>
+					<ul>
+						<li>
+							Puede que el usuario se encuentre en una zona de muy baja cobertura, o que haya consumido el total de sus megas, si consume sus megas la velocidad de internet baja a 128k por segundo y podrá seguir enviando mensajes de Whatsapp, los planes de Internet de Banco W se renuevan los 24 de cada mes, si el usuario no puede enviar mensajes de Whatsapp y tiene letra de cobertura a Internet, igual se debe escalar a jmoreno@bancow.com.co para que se valide el caso.
+						</li>
+					</ul>
+				</section>
+			</div>
+
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+
+	
